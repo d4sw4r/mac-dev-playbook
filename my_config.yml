@@ -1,7 +1,7 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dotfiles: true
+configure_dotfiles: false
 configure_terminal: true
 configure_osx: true
 
@@ -17,6 +17,9 @@ dockitems_persist:
   - name: "Warp"
     path: "/Applications/Warp.app/"
     pos: 2
+  - name: "VS Code"
+    path: "/Applications/Visual Studio Code.app/"
+    pos: 3  
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -24,16 +27,6 @@ sudoers_custom_config: ''
 # sudoers_custom_config: |
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
-
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
-dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
-dotfiles_files:
-  - .zshrc
-  - .gitignore
-  - .inputrc
-  - .osx
-  - .vimrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -68,6 +61,7 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   #- chromedriver
+  - visual-studio-code
   - docker
   #- google-chrome
   - raycast
@@ -75,6 +69,7 @@ homebrew_cask_apps:
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
+mas_upgrade_all_apps: true
 mas_email: ""
 mas_password: ""
 
