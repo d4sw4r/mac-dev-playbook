@@ -14,12 +14,15 @@ dockitems_remove:
   - 'App Store'
   - Terminal
 dockitems_persist:
+  - name: "Launchpad"
+    path: "/Applications/Launchpad.app/"
+    pos: 2
   - name: "Warp"
     path: "/Applications/Warp.app/"
-    pos: 2
+    pos: 3
   - name: "VS Code"
     path: "/Applications/Visual Studio Code.app/"
-    pos: 3  
+    pos: 4
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -49,8 +52,7 @@ homebrew_installed_packages:
   - httpie
   - iperf
   - libevent
-  - sqlite
-  - mas  
+  - mas
   - mcrypt
   - nmap
   - ssh-copy-id
@@ -68,10 +70,10 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  #- chromedriver
+  # - chromedriver
   - visual-studio-code
   - docker
-  #- google-chrome
+  # - google-chrome
   - raycast
   - warp
 
@@ -102,8 +104,6 @@ pip_packages: []
 # - name: mkdocs
 #   state: present # present/absent/latest, default: present
 #   version: "0.16.3" # default: N/A
-
-
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
