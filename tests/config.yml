@@ -1,4 +1,5 @@
 ---
+configure_dotfiles: false
 homebrew_installed_packages:
   - autoconf
   - bash-completion
