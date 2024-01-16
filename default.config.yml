@@ -42,7 +42,7 @@ homebrew_installed_packages:
   - gettext
   - gifsicle
   - git
-  - github/gh/gh
+  - gh
   - go
   - gpg
   - httpie
@@ -63,9 +63,7 @@ homebrew_installed_packages:
   - wrk
   - zsh-history-substring-search
 
-homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
+homebrew_taps: []
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
